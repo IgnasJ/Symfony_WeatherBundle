@@ -1,0 +1,3 @@
+hw_weather_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: HWWeatherBundle:Default:index }

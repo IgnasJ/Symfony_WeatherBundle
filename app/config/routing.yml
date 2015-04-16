@@ -1,3 +1,16 @@
+hw_weather:
+    resource: "@HWWeatherBundle/Resources/config/routing.yml"
+    prefix:   /
+
+weather:
+    path:      /weather
+    defaults:  { _controller: HWWeatherBundle:Weather:index}
+
+hello:
+    path:      /hello/{name}
+    defaults:  { _controller: AppBundle:Hello:index }
+
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

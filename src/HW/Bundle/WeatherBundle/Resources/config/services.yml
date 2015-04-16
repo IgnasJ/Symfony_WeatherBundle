@@ -1,0 +1,9 @@
+services:
+   hw_weather:
+        class: HW\Bundle\WeatherBundle\WeatherLoader
+        arguments: ["@openweather"]  # openweather api
+   openweather:
+        class: HW\Bundle\WeatherBundle\Provider\OpenWeatherProvider
+        #    hw_weather.example:
+        #        class: HW\Bundle\WeatherBundle\Example
+        #        arguments: [@service_id, "plain_value", %parameter%]
